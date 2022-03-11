@@ -1,0 +1,17 @@
+C:\Users\ADM\source\repos\ProyectoFacturacion\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.csproj.AssemblyReference.cache
+C:\Users\ADM\source\repos\ProyectoFacturacion\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.Form1.resources
+C:\Users\ADM\source\repos\ProyectoFacturacion\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.Properties.Resources.resources
+C:\Users\ADM\source\repos\ProyectoFacturacion\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.csproj.GenerateResource.cache
+C:\Users\ADM\source\repos\ProyectoFacturacion\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.csproj.CoreCompileInputs.cache
+C:\Users\ADM\source\repos\ProyectoFacturacion\ProyectoFacturacion\bin\Debug\ProyectoFacturacion.exe.config
+C:\Users\ADM\source\repos\ProyectoFacturacion\ProyectoFacturacion\bin\Debug\ProyectoFacturacion.exe
+C:\Users\ADM\source\repos\ProyectoFacturacion\ProyectoFacturacion\bin\Debug\ProyectoFacturacion.pdb
+C:\Users\ADM\source\repos\ProyectoFacturacion\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.exe
+C:\Users\ADM\source\repos\ProyectoFacturacion\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.pdb
+C:\Users\ADM\source\repos\ProyectoFacturacion\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.Registro.resources
+C:\Users\ADM\source\repos\ProyectoFacturacion\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.Inicio.resources
+C:\Users\ADM\source\repos\ProyectoFacturacion\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.Articulos.resources
+C:\Users\ADM\source\repos\ProyectoFacturacion\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.Clientes.resources
+C:\Users\ADM\source\repos\ProyectoFacturacion\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.Vendedores.resources
+C:\Users\ADM\source\repos\ProyectoFacturacion\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.Pago.resources
+C:\Users\ADM\source\repos\ProyectoFacturacion\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.Factura.resources
