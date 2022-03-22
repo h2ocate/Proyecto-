@@ -34,12 +34,13 @@ namespace ProyectoFacturacion
             this.btnInicio = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TxtUsuario = new System.Windows.Forms.TextBox();
+            this.TxtContraseña = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BtnCerrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,21 +86,20 @@ namespace ProyectoFacturacion
             this.label1.TabIndex = 4;
             this.label1.Text = "Usuario:";
             // 
-            // textBox1
+            // TxtUsuario
             // 
-            this.textBox1.Location = new System.Drawing.Point(156, 166);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 28);
-            this.textBox1.TabIndex = 5;
+            this.TxtUsuario.Location = new System.Drawing.Point(156, 171);
+            this.TxtUsuario.Name = "TxtUsuario";
+            this.TxtUsuario.Size = new System.Drawing.Size(152, 22);
+            this.TxtUsuario.TabIndex = 5;
             // 
-            // textBox2
+            // TxtContraseña
             // 
-            this.textBox2.Location = new System.Drawing.Point(156, 234);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(194, 28);
-            this.textBox2.TabIndex = 6;
+            this.TxtContraseña.Location = new System.Drawing.Point(156, 239);
+            this.TxtContraseña.Name = "TxtContraseña";
+            this.TxtContraseña.PasswordChar = '*';
+            this.TxtContraseña.Size = new System.Drawing.Size(152, 22);
+            this.TxtContraseña.TabIndex = 6;
             // 
             // label3
             // 
@@ -141,18 +141,30 @@ namespace ProyectoFacturacion
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
+            // BtnCerrar
+            // 
+            this.BtnCerrar.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCerrar.Location = new System.Drawing.Point(600, 453);
+            this.BtnCerrar.Name = "BtnCerrar";
+            this.BtnCerrar.Size = new System.Drawing.Size(149, 45);
+            this.BtnCerrar.TabIndex = 11;
+            this.BtnCerrar.Text = "Cerrar";
+            this.BtnCerrar.UseVisualStyleBackColor = true;
+            this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(829, 552);
+            this.Controls.Add(this.BtnCerrar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TxtContraseña);
+            this.Controls.Add(this.TxtUsuario);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnInicio);
@@ -172,12 +184,13 @@ namespace ProyectoFacturacion
         private System.Windows.Forms.Button btnInicio;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TxtUsuario;
+        private System.Windows.Forms.TextBox TxtContraseña;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button BtnCerrar;
     }
 }
 

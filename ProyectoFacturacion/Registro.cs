@@ -33,5 +33,34 @@ namespace ProyectoFacturacion
             this.Hide();
             formu.Show();
         }
+
+        private void btnRegistro1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Conexion con = new Conexion();
+                string codigo = "insert into registro (Nombre,Apellido,Correo,Usuario,Contraseña) values ('" + TxtNombre.Text + "','" + TxtApellido.Text + "','" + TxtCorreo.Text + "','" + TxtUser.Text + "','" + TxtContra.Text + "')";
+                con.ejecutar(codigo);
+                MessageBox.Show("Registro guardado correctamente");
+                TxtNombre.Text = "";
+                TxtApellido.Text = "";
+                TxtCorreo.Text = "";
+                TxtUser.Text = "";
+                TxtContra.Text = "";
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Ha ocurrido el siguiente error" + error);
+            }
+        }
+
+        private void BtnLimpiar_Click(object sender, EventArgs e)
+        {
+            TxtNombre.Text = "";
+            TxtApellido.Text = "";
+            TxtCorreo.Text = "";
+            TxtUser.Text = "";
+            TxtContra.Text = "";
+        }
     }
 }

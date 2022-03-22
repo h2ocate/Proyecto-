@@ -36,15 +36,16 @@ namespace ProyectoFacturacion
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.TxtApellido = new System.Windows.Forms.TextBox();
+            this.TxtCorreo = new System.Windows.Forms.TextBox();
+            this.TxtUser = new System.Windows.Forms.TextBox();
+            this.TxtContra = new System.Windows.Forms.TextBox();
+            this.TxtNombre = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnRegistro1 = new System.Windows.Forms.Button();
             this.btnRegresar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BtnLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -107,45 +108,46 @@ namespace ProyectoFacturacion
             this.label12.TabIndex = 12;
             this.label12.Text = "Apellido:";
             // 
-            // textBox1
+            // TxtApellido
             // 
-            this.textBox1.Location = new System.Drawing.Point(189, 190);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(170, 24);
-            this.textBox1.TabIndex = 13;
+            this.TxtApellido.Location = new System.Drawing.Point(189, 190);
+            this.TxtApellido.Multiline = true;
+            this.TxtApellido.Name = "TxtApellido";
+            this.TxtApellido.Size = new System.Drawing.Size(170, 24);
+            this.TxtApellido.TabIndex = 13;
             // 
-            // textBox2
+            // TxtCorreo
             // 
-            this.textBox2.Location = new System.Drawing.Point(189, 245);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(170, 24);
-            this.textBox2.TabIndex = 14;
+            this.TxtCorreo.Location = new System.Drawing.Point(189, 245);
+            this.TxtCorreo.Multiline = true;
+            this.TxtCorreo.Name = "TxtCorreo";
+            this.TxtCorreo.Size = new System.Drawing.Size(170, 24);
+            this.TxtCorreo.TabIndex = 14;
             // 
-            // textBox3
+            // TxtUser
             // 
-            this.textBox3.Location = new System.Drawing.Point(189, 309);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(170, 24);
-            this.textBox3.TabIndex = 15;
+            this.TxtUser.Location = new System.Drawing.Point(189, 309);
+            this.TxtUser.Multiline = true;
+            this.TxtUser.Name = "TxtUser";
+            this.TxtUser.Size = new System.Drawing.Size(170, 24);
+            this.TxtUser.TabIndex = 15;
             // 
-            // textBox4
+            // TxtContra
             // 
-            this.textBox4.Location = new System.Drawing.Point(189, 374);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(170, 24);
-            this.textBox4.TabIndex = 16;
+            this.TxtContra.Location = new System.Drawing.Point(189, 374);
+            this.TxtContra.Multiline = true;
+            this.TxtContra.Name = "TxtContra";
+            this.TxtContra.PasswordChar = '*';
+            this.TxtContra.Size = new System.Drawing.Size(170, 24);
+            this.TxtContra.TabIndex = 16;
             // 
-            // textBox5
+            // TxtNombre
             // 
-            this.textBox5.Location = new System.Drawing.Point(189, 130);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(170, 24);
-            this.textBox5.TabIndex = 17;
+            this.TxtNombre.Location = new System.Drawing.Point(189, 130);
+            this.TxtNombre.Multiline = true;
+            this.TxtNombre.Name = "TxtNombre";
+            this.TxtNombre.Size = new System.Drawing.Size(170, 24);
+            this.TxtNombre.TabIndex = 17;
             // 
             // label3
             // 
@@ -160,19 +162,20 @@ namespace ProyectoFacturacion
             // btnRegistro1
             // 
             this.btnRegistro1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistro1.Location = new System.Drawing.Point(135, 457);
+            this.btnRegistro1.Location = new System.Drawing.Point(269, 467);
             this.btnRegistro1.Name = "btnRegistro1";
-            this.btnRegistro1.Size = new System.Drawing.Size(141, 39);
+            this.btnRegistro1.Size = new System.Drawing.Size(157, 39);
             this.btnRegistro1.TabIndex = 19;
             this.btnRegistro1.Text = "Registrarse";
             this.btnRegistro1.UseVisualStyleBackColor = true;
+            this.btnRegistro1.Click += new System.EventHandler(this.btnRegistro1_Click);
             // 
             // btnRegresar
             // 
             this.btnRegresar.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(347, 457);
+            this.btnRegresar.Location = new System.Drawing.Point(528, 467);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(157, 39);
+            this.btnRegresar.Size = new System.Drawing.Size(165, 39);
             this.btnRegresar.TabIndex = 20;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = true;
@@ -188,21 +191,33 @@ namespace ProyectoFacturacion
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
             // 
+            // BtnLimpiar
+            // 
+            this.BtnLimpiar.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLimpiar.Location = new System.Drawing.Point(42, 467);
+            this.BtnLimpiar.Name = "BtnLimpiar";
+            this.BtnLimpiar.Size = new System.Drawing.Size(157, 39);
+            this.BtnLimpiar.TabIndex = 22;
+            this.BtnLimpiar.Text = "Limpiar";
+            this.BtnLimpiar.UseVisualStyleBackColor = true;
+            this.BtnLimpiar.Click += new System.EventHandler(this.BtnLimpiar_Click);
+            // 
             // Registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(804, 563);
+            this.Controls.Add(this.BtnLimpiar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnRegistro1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TxtNombre);
+            this.Controls.Add(this.TxtContra);
+            this.Controls.Add(this.TxtUser);
+            this.Controls.Add(this.TxtCorreo);
+            this.Controls.Add(this.TxtApellido);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -226,14 +241,15 @@ namespace ProyectoFacturacion
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox TxtApellido;
+        private System.Windows.Forms.TextBox TxtCorreo;
+        private System.Windows.Forms.TextBox TxtUser;
+        private System.Windows.Forms.TextBox TxtContra;
+        private System.Windows.Forms.TextBox TxtNombre;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnRegistro1;
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button BtnLimpiar;
     }
 }
