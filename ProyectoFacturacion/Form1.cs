@@ -61,5 +61,25 @@ namespace ProyectoFacturacion
         {
             Application.Exit();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtContraseña_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

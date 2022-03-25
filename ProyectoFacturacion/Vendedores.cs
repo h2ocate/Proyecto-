@@ -23,5 +23,15 @@ namespace ProyectoFacturacion
             this.Hide();
             formi1.Show();
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
