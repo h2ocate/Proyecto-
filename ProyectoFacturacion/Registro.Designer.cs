@@ -53,10 +53,9 @@ namespace ProyectoFacturacion
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
-            this.label1.Location = new System.Drawing.Point(156, 123);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(208, 151);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 17);
+            this.label1.Size = new System.Drawing.Size(82, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -64,10 +63,9 @@ namespace ProyectoFacturacion
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(414, 72);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(552, 89);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 13);
+            this.label2.Size = new System.Drawing.Size(0, 17);
             this.label2.TabIndex = 1;
             // 
             // label9
@@ -75,10 +73,9 @@ namespace ProyectoFacturacion
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.Window;
-            this.label9.Location = new System.Drawing.Point(156, 292);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(208, 359);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(88, 17);
+            this.label9.Size = new System.Drawing.Size(114, 21);
             this.label9.TabIndex = 9;
             this.label9.Text = "Contraseña:";
             // 
@@ -87,10 +84,9 @@ namespace ProyectoFacturacion
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.Window;
-            this.label10.Location = new System.Drawing.Point(155, 251);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(207, 309);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(58, 17);
+            this.label10.Size = new System.Drawing.Size(75, 21);
             this.label10.TabIndex = 10;
             this.label10.Text = "Usuario:";
             this.label10.Click += new System.EventHandler(this.label10_Click);
@@ -100,10 +96,9 @@ namespace ProyectoFacturacion
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.Window;
-            this.label11.Location = new System.Drawing.Point(156, 210);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(208, 258);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(57, 17);
+            this.label11.Size = new System.Drawing.Size(72, 21);
             this.label11.TabIndex = 11;
             this.label11.Text = "Correo:";
             // 
@@ -112,10 +107,9 @@ namespace ProyectoFacturacion
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.Window;
-            this.label12.Location = new System.Drawing.Point(156, 164);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Location = new System.Drawing.Point(208, 202);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(65, 17);
+            this.label12.Size = new System.Drawing.Size(83, 21);
             this.label12.TabIndex = 12;
             this.label12.Text = "Apellido:";
             // 
@@ -124,71 +118,76 @@ namespace ProyectoFacturacion
             this.TxtApellido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(94)))), ((int)(((byte)(129)))));
             this.TxtApellido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtApellido.ForeColor = System.Drawing.SystemColors.Window;
-            this.TxtApellido.Location = new System.Drawing.Point(159, 183);
-            this.TxtApellido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtApellido.Location = new System.Drawing.Point(212, 225);
+            this.TxtApellido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtApellido.Multiline = true;
             this.TxtApellido.Name = "TxtApellido";
-            this.TxtApellido.Size = new System.Drawing.Size(304, 20);
+            this.TxtApellido.Size = new System.Drawing.Size(405, 24);
             this.TxtApellido.TabIndex = 13;
+            this.TxtApellido.TextChanged += new System.EventHandler(this.TxtApellido_TextChanged);
             // 
             // TxtCorreo
             // 
             this.TxtCorreo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(94)))), ((int)(((byte)(129)))));
             this.TxtCorreo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtCorreo.ForeColor = System.Drawing.SystemColors.Window;
-            this.TxtCorreo.Location = new System.Drawing.Point(159, 229);
-            this.TxtCorreo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtCorreo.Location = new System.Drawing.Point(212, 282);
+            this.TxtCorreo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtCorreo.Multiline = true;
             this.TxtCorreo.Name = "TxtCorreo";
-            this.TxtCorreo.Size = new System.Drawing.Size(304, 20);
+            this.TxtCorreo.Size = new System.Drawing.Size(405, 24);
             this.TxtCorreo.TabIndex = 14;
+            this.TxtCorreo.TextChanged += new System.EventHandler(this.TxtCorreo_TextChanged);
             // 
             // TxtUser
             // 
             this.TxtUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(94)))), ((int)(((byte)(129)))));
             this.TxtUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtUser.ForeColor = System.Drawing.SystemColors.Window;
-            this.TxtUser.Location = new System.Drawing.Point(159, 270);
-            this.TxtUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtUser.Location = new System.Drawing.Point(212, 332);
+            this.TxtUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtUser.Multiline = true;
             this.TxtUser.Name = "TxtUser";
-            this.TxtUser.Size = new System.Drawing.Size(304, 20);
+            this.TxtUser.Size = new System.Drawing.Size(405, 24);
             this.TxtUser.TabIndex = 15;
+            this.TxtUser.TextChanged += new System.EventHandler(this.TxtUser_TextChanged);
             // 
             // TxtContra
             // 
             this.TxtContra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(94)))), ((int)(((byte)(129)))));
             this.TxtContra.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtContra.ForeColor = System.Drawing.SystemColors.Window;
-            this.TxtContra.Location = new System.Drawing.Point(159, 311);
-            this.TxtContra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtContra.Location = new System.Drawing.Point(212, 383);
+            this.TxtContra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtContra.Multiline = true;
             this.TxtContra.Name = "TxtContra";
             this.TxtContra.PasswordChar = '*';
-            this.TxtContra.Size = new System.Drawing.Size(304, 20);
+            this.TxtContra.Size = new System.Drawing.Size(405, 24);
             this.TxtContra.TabIndex = 16;
+            this.TxtContra.TextChanged += new System.EventHandler(this.TxtContra_TextChanged);
             // 
             // TxtNombre
             // 
             this.TxtNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(94)))), ((int)(((byte)(129)))));
             this.TxtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtNombre.ForeColor = System.Drawing.SystemColors.Window;
-            this.TxtNombre.Location = new System.Drawing.Point(159, 142);
-            this.TxtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtNombre.Location = new System.Drawing.Point(212, 175);
+            this.TxtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtNombre.Multiline = true;
             this.TxtNombre.Name = "TxtNombre";
-            this.TxtNombre.Size = new System.Drawing.Size(304, 20);
+            this.TxtNombre.Size = new System.Drawing.Size(405, 24);
             this.TxtNombre.TabIndex = 17;
+            this.TxtNombre.TextChanged += new System.EventHandler(this.TxtNombre_TextChanged);
             // 
             // btnRegistro1
             // 
             this.btnRegistro1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(97)))), ((int)(((byte)(238)))));
             this.btnRegistro1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistro1.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnRegistro1.Location = new System.Drawing.Point(99, 353);
-            this.btnRegistro1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegistro1.Location = new System.Drawing.Point(132, 434);
+            this.btnRegistro1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRegistro1.Name = "btnRegistro1";
-            this.btnRegistro1.Size = new System.Drawing.Size(426, 46);
+            this.btnRegistro1.Size = new System.Drawing.Size(568, 57);
             this.btnRegistro1.TabIndex = 19;
             this.btnRegistro1.Text = "Registrarse";
             this.btnRegistro1.UseVisualStyleBackColor = false;
@@ -199,10 +198,10 @@ namespace ProyectoFacturacion
             this.btnRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(97)))), ((int)(((byte)(238)))));
             this.btnRegresar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegresar.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnRegresar.Location = new System.Drawing.Point(401, 414);
-            this.btnRegresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegresar.Location = new System.Drawing.Point(535, 510);
+            this.btnRegresar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(124, 32);
+            this.btnRegresar.Size = new System.Drawing.Size(165, 39);
             this.btnRegresar.TabIndex = 20;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
@@ -213,10 +212,10 @@ namespace ProyectoFacturacion
             this.BtnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(97)))), ((int)(((byte)(238)))));
             this.BtnLimpiar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLimpiar.ForeColor = System.Drawing.SystemColors.Window;
-            this.BtnLimpiar.Location = new System.Drawing.Point(95, 414);
-            this.BtnLimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnLimpiar.Location = new System.Drawing.Point(127, 510);
+            this.BtnLimpiar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnLimpiar.Name = "BtnLimpiar";
-            this.BtnLimpiar.Size = new System.Drawing.Size(118, 32);
+            this.BtnLimpiar.Size = new System.Drawing.Size(157, 39);
             this.BtnLimpiar.TabIndex = 22;
             this.BtnLimpiar.Text = "Limpiar";
             this.BtnLimpiar.UseVisualStyleBackColor = false;
@@ -226,19 +225,20 @@ namespace ProyectoFacturacion
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(272, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(363, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(97, 90);
+            this.pictureBox1.Size = new System.Drawing.Size(129, 111);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             // 
             // Registro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(59)))), ((int)(((byte)(104)))));
-            this.ClientSize = new System.Drawing.Size(603, 457);
+            this.ClientSize = new System.Drawing.Size(804, 562);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnLimpiar);
             this.Controls.Add(this.btnRegresar);
@@ -254,7 +254,7 @@ namespace ProyectoFacturacion
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Registro";
             this.Text = "Registro";
             this.Load += new System.EventHandler(this.Registro_Load);

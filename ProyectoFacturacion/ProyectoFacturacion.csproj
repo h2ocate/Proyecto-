@@ -99,6 +99,30 @@
     <Compile Include="Vendedores.Designer.cs">
       <DependentUpon>Vendedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="VerCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerCliente.Designer.cs">
+      <DependentUpon>VerCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerArticulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerArticulo.Designer.cs">
+      <DependentUpon>VerArticulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerPago.Designer.cs">
+      <DependentUpon>VerPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerVendedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerVendedores.Designer.cs">
+      <DependentUpon>VerVendedores.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Articulos.resx">
       <DependentUpon>Articulos.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +155,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vendedores.resx">
       <DependentUpon>Vendedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerCliente.resx">
+      <DependentUpon>VerCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerArticulo.resx">
+      <DependentUpon>VerArticulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerPago.resx">
+      <DependentUpon>VerPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerVendedores.resx">
+      <DependentUpon>VerVendedores.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

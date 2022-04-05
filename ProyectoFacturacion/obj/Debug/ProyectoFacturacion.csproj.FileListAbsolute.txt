@@ -32,3 +32,24 @@ C:\Users\Angel Adames\source\repos\Proyecto-\ProyectoFacturacion\obj\Debug\Proye
 C:\Users\Angel Adames\source\repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.csproj.CoreCompileInputs.cache
 C:\Users\Angel Adames\source\repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.exe
 C:\Users\Angel Adames\source\repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.pdb
+C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\bin\Debug\ProyectoFacturacion.exe.config
+C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\bin\Debug\ProyectoFacturacion.exe
+C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\bin\Debug\ProyectoFacturacion.pdb
+C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.csproj.AssemblyReference.cache
+C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.Articulos.resources
+C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.Clientes.resources
+C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.Factura.resources
+C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.Form1.resources
+C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.Inicio.resources
+C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.Pago.resources
+C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.Properties.Resources.resources
+C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.Registro.resources
+C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.Vendedores.resources
+C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.csproj.GenerateResource.cache
+C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.csproj.CoreCompileInputs.cache
+C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.exe
+C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.pdb
+C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.VerCliente.resources
+C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.VerPago.resources
+C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.VerArticulo.resources
+C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.VerVendedores.resources

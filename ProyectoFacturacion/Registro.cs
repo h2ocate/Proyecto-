@@ -24,7 +24,7 @@ namespace ProyectoFacturacion
 
         private void Registro_Load(object sender, EventArgs e)
         {
-
+            btnRegistro1.Enabled = false;
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)
@@ -66,6 +66,36 @@ namespace ProyectoFacturacion
         private void label10_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void TxtNombre_TextChanged(object sender, EventArgs e)
+        {
+            validarRegistro();
+        }
+        private void validarRegistro()
+        {
+            var vr = !string.IsNullOrEmpty(TxtNombre.Text) && !string.IsNullOrEmpty(TxtApellido.Text) && !string.IsNullOrEmpty(TxtCorreo.Text) && !string.IsNullOrEmpty(TxtUser.Text) && !string.IsNullOrEmpty(TxtContra.Text);
+            btnRegistro1.Enabled = vr;
+        }
+
+        private void TxtApellido_TextChanged(object sender, EventArgs e)
+        {
+            validarRegistro();
+        }
+
+        private void TxtCorreo_TextChanged(object sender, EventArgs e)
+        {
+            validarRegistro();
+        }
+
+        private void TxtUser_TextChanged(object sender, EventArgs e)
+        {
+            validarRegistro();
+        }
+
+        private void TxtContra_TextChanged(object sender, EventArgs e)
+        {
+            validarRegistro();
         }
     }
 }

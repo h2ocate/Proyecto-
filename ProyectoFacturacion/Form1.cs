@@ -20,7 +20,7 @@ namespace ProyectoFacturacion
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            btnInicio.Enabled = false;
         }
 
         private void btnRegistrarse_Click(object sender, EventArgs e)
@@ -69,17 +69,22 @@ namespace ProyectoFacturacion
 
         private void TxtContraseña_TextChanged(object sender, EventArgs e)
         {
-
+            validarUsuario();
         }
 
         private void TxtUsuario_TextChanged(object sender, EventArgs e)
         {
-
+            validarUsuario();
         }
 
         private void label5_Click(object sender, EventArgs e)
         {
 
         }
+         private void validarUsuario() {
+            var vr1 = !string.IsNullOrEmpty(TxtUsuario.Text) && !string.IsNullOrEmpty(TxtContraseña.Text);
+            btnInicio.Enabled = vr1;
+        }
+
     }
 }
