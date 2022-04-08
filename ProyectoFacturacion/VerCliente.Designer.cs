@@ -35,7 +35,6 @@ namespace ProyectoFacturacion
             this.btnEliminar = new System.Windows.Forms.Button();
             this.TxtCod = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.TxtApe = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.TxtNom = new System.Windows.Forms.TextBox();
@@ -54,8 +53,10 @@ namespace ProyectoFacturacion
             // 
             // dgvClientes
             // 
+            this.dgvClientes.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvClientes.Location = new System.Drawing.Point(302, 146);
+            this.dgvClientes.Location = new System.Drawing.Point(301, 146);
+            this.dgvClientes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.RowHeadersWidth = 51;
             this.dgvClientes.RowTemplate.Height = 24;
@@ -66,7 +67,8 @@ namespace ProyectoFacturacion
             // btnActualizar
             // 
             this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizar.Location = new System.Drawing.Point(18, 146);
+            this.btnActualizar.Location = new System.Drawing.Point(19, 146);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(104, 32);
             this.btnActualizar.TabIndex = 2;
@@ -88,6 +90,7 @@ namespace ProyectoFacturacion
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.Location = new System.Drawing.Point(180, 146);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(100, 32);
             this.btnEliminar.TabIndex = 11;
@@ -98,10 +101,12 @@ namespace ProyectoFacturacion
             // TxtCod
             // 
             this.TxtCod.Location = new System.Drawing.Point(95, 80);
+            this.TxtCod.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtCod.Name = "TxtCod";
             this.TxtCod.Size = new System.Drawing.Size(161, 22);
             this.TxtCod.TabIndex = 13;
             this.TxtCod.TextChanged += new System.EventHandler(this.TxtCod_TextChanged);
+            this.TxtCod.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtCod_KeyUp);
             // 
             // label6
             // 
@@ -113,20 +118,10 @@ namespace ProyectoFacturacion
             this.label6.TabIndex = 12;
             this.label6.Text = "Codigo:";
             // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(274, 78);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(100, 32);
-            this.btnBuscar.TabIndex = 14;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
             // TxtApe
             // 
-            this.TxtApe.Location = new System.Drawing.Point(119, 376);
+            this.TxtApe.Location = new System.Drawing.Point(119, 377);
+            this.TxtApe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtApe.Name = "TxtApe";
             this.TxtApe.Size = new System.Drawing.Size(161, 22);
             this.TxtApe.TabIndex = 18;
@@ -135,7 +130,7 @@ namespace ProyectoFacturacion
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(18, 374);
+            this.label1.Location = new System.Drawing.Point(19, 374);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 24);
             this.label1.TabIndex = 17;
@@ -144,6 +139,7 @@ namespace ProyectoFacturacion
             // TxtNom
             // 
             this.TxtNom.Location = new System.Drawing.Point(119, 313);
+            this.TxtNom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtNom.Name = "TxtNom";
             this.TxtNom.Size = new System.Drawing.Size(161, 22);
             this.TxtNom.TabIndex = 16;
@@ -161,6 +157,7 @@ namespace ProyectoFacturacion
             // TxtTel
             // 
             this.TxtTel.Location = new System.Drawing.Point(119, 537);
+            this.TxtTel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtTel.Name = "TxtTel";
             this.TxtTel.Size = new System.Drawing.Size(161, 22);
             this.TxtTel.TabIndex = 22;
@@ -178,6 +175,7 @@ namespace ProyectoFacturacion
             // TxtDire
             // 
             this.TxtDire.Location = new System.Drawing.Point(119, 484);
+            this.TxtDire.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtDire.Name = "TxtDire";
             this.TxtDire.Size = new System.Drawing.Size(161, 22);
             this.TxtDire.TabIndex = 20;
@@ -186,7 +184,7 @@ namespace ProyectoFacturacion
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(14, 484);
+            this.label4.Location = new System.Drawing.Point(13, 484);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(95, 24);
             this.label4.TabIndex = 19;
@@ -195,6 +193,7 @@ namespace ProyectoFacturacion
             // TxtGen
             // 
             this.TxtGen.Location = new System.Drawing.Point(119, 432);
+            this.TxtGen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtGen.Name = "TxtGen";
             this.TxtGen.Size = new System.Drawing.Size(161, 22);
             this.TxtGen.TabIndex = 24;
@@ -212,6 +211,7 @@ namespace ProyectoFacturacion
             // TxtCedu
             // 
             this.TxtCedu.Location = new System.Drawing.Point(119, 260);
+            this.TxtCedu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtCedu.Name = "TxtCedu";
             this.TxtCedu.Size = new System.Drawing.Size(161, 22);
             this.TxtCedu.TabIndex = 26;
@@ -229,7 +229,8 @@ namespace ProyectoFacturacion
             // BtnRegre
             // 
             this.BtnRegre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnRegre.Location = new System.Drawing.Point(1010, 78);
+            this.BtnRegre.Location = new System.Drawing.Point(1011, 78);
+            this.BtnRegre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnRegre.Name = "BtnRegre";
             this.BtnRegre.Size = new System.Drawing.Size(128, 34);
             this.BtnRegre.TabIndex = 27;
@@ -241,7 +242,7 @@ namespace ProyectoFacturacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1163, 616);
+            this.ClientSize = new System.Drawing.Size(1163, 615);
             this.Controls.Add(this.BtnRegre);
             this.Controls.Add(this.TxtCedu);
             this.Controls.Add(this.label8);
@@ -255,13 +256,13 @@ namespace ProyectoFacturacion
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxtNom);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.TxtCod);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.dgvClientes);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "VerCliente";
             this.Text = "VerCliente";
             this.Load += new System.EventHandler(this.VerCliente_Load);
@@ -277,9 +278,7 @@ namespace ProyectoFacturacion
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.TextBox TxtCod;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox TxtApe;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox TxtNom;
@@ -293,5 +292,6 @@ namespace ProyectoFacturacion
         private System.Windows.Forms.TextBox TxtCedu;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button BtnRegre;
+        public System.Windows.Forms.TextBox TxtCod;
     }
 }

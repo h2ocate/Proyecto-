@@ -61,6 +61,30 @@
       <DependentUpon>Clientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Conexion.cs" />
+    <Compile Include="ConsultaArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaArticulos.Designer.cs">
+      <DependentUpon>ConsultaArticulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaPago.Designer.cs">
+      <DependentUpon>ConsultaPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas.Designer.cs">
+      <DependentUpon>Consultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaVendedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaVendedores.Designer.cs">
+      <DependentUpon>ConsultaVendedores.cs</DependentUpon>
+    </Compile>
     <Compile Include="Factura.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +117,12 @@
     <Compile Include="Registro.Designer.cs">
       <DependentUpon>Registro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte.Designer.cs">
+      <DependentUpon>Reporte.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vendedores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +141,12 @@
     <Compile Include="VerArticulo.Designer.cs">
       <DependentUpon>VerArticulo.cs</DependentUpon>
     </Compile>
+    <Compile Include="VerFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerFactura.Designer.cs">
+      <DependentUpon>VerFactura.cs</DependentUpon>
+    </Compile>
     <Compile Include="VerPago.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +164,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaArticulos.resx">
+      <DependentUpon>ConsultaArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaPago.resx">
+      <DependentUpon>ConsultaPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas.resx">
+      <DependentUpon>Consultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaVendedores.resx">
+      <DependentUpon>ConsultaVendedores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Factura.resx">
       <DependentUpon>Factura.cs</DependentUpon>
@@ -153,6 +201,9 @@
     <EmbeddedResource Include="Registro.resx">
       <DependentUpon>Registro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reporte.resx">
+      <DependentUpon>Reporte.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vendedores.resx">
       <DependentUpon>Vendedores.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,6 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VerArticulo.resx">
       <DependentUpon>VerArticulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerFactura.resx">
+      <DependentUpon>VerFactura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VerPago.resx">
       <DependentUpon>VerPago.cs</DependentUpon>

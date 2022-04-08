@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
+using System.Data.SqlTypes;
+using Microsoft.SqlServer;
+using System.Data.Sql;
 namespace ProyectoFacturacion
 {
     public partial class VerCliente : Form
     {
+        SqlConnection cnx = new SqlConnection("Data Source=.;Initial Catalog=Facturacion;Integrated Security=True");
         Conexion con = new Conexion();
         public VerCliente()
         {
@@ -49,7 +53,7 @@ namespace ProyectoFacturacion
             try
             {
                 Conexion con = new Conexion();
-                string eliminar = "delete Clientes where CodCliente = '" + TxtCod.Text + "'";
+                string eliminar = "  delete From Clientes where CodCliente = '" + TxtCod.Text + "'";
                 con.ejecutar(eliminar);
                 MessageBox.Show("Se elimino el cliente");
                 TxtCod.Text = "";
@@ -57,7 +61,7 @@ namespace ProyectoFacturacion
             }
             catch (Exception error)
             {
-                MessageBox.Show("Error al eliminar el clientes" + error.Message);
+                MessageBox.Show("Error al eliminar el cliente" + error.Message);
             }
         }
 
@@ -86,23 +90,12 @@ namespace ProyectoFacturacion
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            try
-            {
-                Conexion con = new Conexion();
-                string buscar = "SELECT * FROM Clientes where CodCliente = '" + TxtCod.Text + "'";
-                con.ejecutar(buscar);
-                TxtCod.Text = "";
-                dgvClientes.DataSource = LlenarDataGV("Clientes").Tables[0];
-            }
-            catch (Exception error)
-            {
-                MessageBox.Show("no se encontro el clientes" + error.Message);
-            }
+            
         }
 
         private void TxtCod_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void BtnRegre_Click(object sender, EventArgs e)
@@ -110,6 +103,34 @@ namespace ProyectoFacturacion
             Form formi0 = new Clientes();
             this.Hide();
             formi0.Show();
+        }
+
+        private void TxtCod_KeyUp(object sender, KeyEventArgs e)
+        {
+            cnx.Open();
+            SqlCommand cmd = cnx.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT * FROM Clientes where CodCliente like('%"+TxtCod.Text+"%')";
+            cmd.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            dgvClientes.DataSource = dt;
+            cnx.Close();
+
+        }
+        private void ocultarColumna()
+        {
+            dgvClientes.Columns[0].Visible = false;
+            dgvClientes.Columns[1].Visible = false;
+            dgvClientes.Columns[2].Visible = false;
+            dgvClientes.Columns[3].Visible = false;
+            dgvClientes.Columns[4].Visible = false;
+            dgvClientes.Columns[5].Visible = false;
+            dgvClientes.Columns[6].Visible = false;
+        }
+        private void eliminar() {
+            dgvClientes.Rows.Remove(dgvClientes.CurrentRow);
         }
     }
 }

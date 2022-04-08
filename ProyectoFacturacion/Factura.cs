@@ -66,7 +66,7 @@ namespace ProyectoFacturacion
             try
             {
                 Conexion con = new Conexion();
-                string codigo = "insert into facturas (Num, FormaPago, IdEmpleado, IdArticulo, Comentario, Fecha, Cantidad, PrecioUnit) values ('" + TxtNum.Text + "','" + cbxPago.Text + "','" + TxtIdEmp.Text + "','" + TxtIdArti.Text + "','" + TxtComent.Text + "','" + dtpFecha.Text + "','" + TxtCant.Text + "','" + TxtPrecio.Text + "')";
+                string codigo = "insert into facturas (Num, FormaPago, IdEmpleado, IdArticulo, Comentario, Fecha, Cantidad, PrecioUnit, idCliente) values ('" + TxtNum.Text + "','" + cbxPago.Text + "','" + TxtIdEmp.Text + "','" + TxtIdArti.Text + "','" + TxtComent.Text + "','" + dtpFecha.Text + "','" + TxtCant.Text + "','" + TxtPrecio.Text + "','" + txtIdCliente.Text + "')";
                 con.ejecutar(codigo);
                 MessageBox.Show("Informacion de la factura guardada correctamente");
                 TxtNum.Text = "";
@@ -77,6 +77,7 @@ namespace ProyectoFacturacion
                 dtpFecha.Text = "";
                 TxtComent.Text = "";
                 TxtCant.Text = "";
+                txtIdCliente.Text = "";
             }
             catch (Exception error)
             {
@@ -118,6 +119,13 @@ namespace ProyectoFacturacion
         private void TxtPrecio_TextChanged(object sender, EventArgs e)
         {
             validarFactura();
+        }
+
+        private void btnFactu_Click(object sender, EventArgs e)
+        {
+            Form formu9 = new VerFactura();
+            this.Hide();
+            formu9.Show();
         }
     }
 }

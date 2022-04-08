@@ -54,7 +54,9 @@ namespace ProyectoFacturacion
 
         private void btnControl_Click(object sender, EventArgs e)
         {
-
+            Form formi11 = new Consultas();
+            this.Hide();
+            formi11.Show();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

@@ -53,3 +53,9 @@ C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFactur
 C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.VerPago.resources
 C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.VerArticulo.resources
 C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.VerVendedores.resources
+C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.VerFactura.resources
+C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.Consultas.resources
+C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.Reporte.resources
+C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.ConsultaVendedores.resources
+C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.ConsultaArticulos.resources
+C:\Users\ADM\Source\Repos\Proyecto-\ProyectoFacturacion\obj\Debug\ProyectoFacturacion.ConsultaPago.resources

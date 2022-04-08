@@ -55,6 +55,8 @@ namespace ProyectoFacturacion
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cbxPago = new System.Windows.Forms.ComboBox();
+            this.txtIdCliente = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,7 +66,7 @@ namespace ProyectoFacturacion
             this.TxtNum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtNum.ForeColor = System.Drawing.SystemColors.Window;
             this.TxtNum.Location = new System.Drawing.Point(47, 126);
-            this.TxtNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtNum.Margin = new System.Windows.Forms.Padding(4);
             this.TxtNum.Name = "TxtNum";
             this.TxtNum.Size = new System.Drawing.Size(405, 22);
             this.TxtNum.TabIndex = 51;
@@ -88,7 +90,7 @@ namespace ProyectoFacturacion
             this.TxtIdEmp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtIdEmp.ForeColor = System.Drawing.SystemColors.Window;
             this.TxtIdEmp.Location = new System.Drawing.Point(47, 219);
-            this.TxtIdEmp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtIdEmp.Margin = new System.Windows.Forms.Padding(4);
             this.TxtIdEmp.Name = "TxtIdEmp";
             this.TxtIdEmp.Size = new System.Drawing.Size(405, 22);
             this.TxtIdEmp.TabIndex = 49;
@@ -100,7 +102,7 @@ namespace ProyectoFacturacion
             this.TxtCant.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtCant.ForeColor = System.Drawing.SystemColors.Window;
             this.TxtCant.Location = new System.Drawing.Point(52, 528);
-            this.TxtCant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtCant.Margin = new System.Windows.Forms.Padding(4);
             this.TxtCant.Name = "TxtCant";
             this.TxtCant.Size = new System.Drawing.Size(405, 22);
             this.TxtCant.TabIndex = 48;
@@ -112,7 +114,7 @@ namespace ProyectoFacturacion
             this.TxtIdArti.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtIdArti.ForeColor = System.Drawing.SystemColors.Window;
             this.TxtIdArti.Location = new System.Drawing.Point(47, 283);
-            this.TxtIdArti.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtIdArti.Margin = new System.Windows.Forms.Padding(4);
             this.TxtIdArti.Name = "TxtIdArti";
             this.TxtIdArti.Size = new System.Drawing.Size(405, 22);
             this.TxtIdArti.TabIndex = 47;
@@ -124,7 +126,7 @@ namespace ProyectoFacturacion
             this.TxtComent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtComent.ForeColor = System.Drawing.SystemColors.Window;
             this.TxtComent.Location = new System.Drawing.Point(47, 348);
-            this.TxtComent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtComent.Margin = new System.Windows.Forms.Padding(4);
             this.TxtComent.Multiline = true;
             this.TxtComent.Name = "TxtComent";
             this.TxtComent.Size = new System.Drawing.Size(403, 89);
@@ -225,7 +227,7 @@ namespace ProyectoFacturacion
             this.TxtPrecio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtPrecio.ForeColor = System.Drawing.SystemColors.Window;
             this.TxtPrecio.Location = new System.Drawing.Point(50, 581);
-            this.TxtPrecio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtPrecio.Margin = new System.Windows.Forms.Padding(4);
             this.TxtPrecio.Name = "TxtPrecio";
             this.TxtPrecio.Size = new System.Drawing.Size(405, 22);
             this.TxtPrecio.TabIndex = 58;
@@ -248,8 +250,8 @@ namespace ProyectoFacturacion
             this.btnguardar3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(97)))), ((int)(((byte)(238)))));
             this.btnguardar3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnguardar3.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnguardar3.Location = new System.Drawing.Point(21, 641);
-            this.btnguardar3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnguardar3.Location = new System.Drawing.Point(38, 699);
+            this.btnguardar3.Margin = new System.Windows.Forms.Padding(4);
             this.btnguardar3.Name = "btnguardar3";
             this.btnguardar3.Size = new System.Drawing.Size(360, 57);
             this.btnguardar3.TabIndex = 61;
@@ -263,20 +265,21 @@ namespace ProyectoFacturacion
             this.btnFactu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFactu.ForeColor = System.Drawing.SystemColors.Window;
             this.btnFactu.Location = new System.Drawing.Point(625, 406);
-            this.btnFactu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFactu.Margin = new System.Windows.Forms.Padding(4);
             this.btnFactu.Name = "btnFactu";
             this.btnFactu.Size = new System.Drawing.Size(151, 44);
             this.btnFactu.TabIndex = 60;
             this.btnFactu.Text = "Ver";
             this.btnFactu.UseVisualStyleBackColor = false;
+            this.btnFactu.Click += new System.EventHandler(this.btnFactu_Click);
             // 
             // btnRegresar5
             // 
             this.btnRegresar5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(97)))), ((int)(((byte)(238)))));
             this.btnRegresar5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegresar5.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnRegresar5.Location = new System.Drawing.Point(757, 641);
-            this.btnRegresar5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegresar5.Location = new System.Drawing.Point(774, 699);
+            this.btnRegresar5.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegresar5.Name = "btnRegresar5";
             this.btnRegresar5.Size = new System.Drawing.Size(201, 48);
             this.btnRegresar5.TabIndex = 59;
@@ -289,8 +292,8 @@ namespace ProyectoFacturacion
             this.btnFormaPa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(97)))), ((int)(((byte)(238)))));
             this.btnFormaPa.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFormaPa.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnFormaPa.Location = new System.Drawing.Point(441, 641);
-            this.btnFormaPa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFormaPa.Location = new System.Drawing.Point(458, 699);
+            this.btnFormaPa.Margin = new System.Windows.Forms.Padding(4);
             this.btnFormaPa.Name = "btnFormaPa";
             this.btnFormaPa.Size = new System.Drawing.Size(209, 57);
             this.btnFormaPa.TabIndex = 62;
@@ -342,12 +345,37 @@ namespace ProyectoFacturacion
             this.cbxPago.TabIndex = 66;
             this.cbxPago.SelectedIndexChanged += new System.EventHandler(this.cbxPago_SelectedIndexChanged);
             // 
+            // txtIdCliente
+            // 
+            this.txtIdCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(94)))), ((int)(((byte)(129)))));
+            this.txtIdCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtIdCliente.ForeColor = System.Drawing.SystemColors.Window;
+            this.txtIdCliente.Location = new System.Drawing.Point(50, 645);
+            this.txtIdCliente.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIdCliente.Name = "txtIdCliente";
+            this.txtIdCliente.Size = new System.Drawing.Size(405, 22);
+            this.txtIdCliente.TabIndex = 68;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.Window;
+            this.label11.Location = new System.Drawing.Point(48, 620);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(124, 21);
+            this.label11.TabIndex = 67;
+            this.label11.Text = "Id del cliente:";
+            // 
             // Factura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(59)))), ((int)(((byte)(104)))));
-            this.ClientSize = new System.Drawing.Size(1032, 720);
+            this.ClientSize = new System.Drawing.Size(1155, 816);
+            this.Controls.Add(this.txtIdCliente);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.cbxPago);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label10);
@@ -406,5 +434,7 @@ namespace ProyectoFacturacion
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox cbxPago;
+        private System.Windows.Forms.TextBox txtIdCliente;
+        private System.Windows.Forms.Label label11;
     }
 }

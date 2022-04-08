@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace ProyectoFacturacion
 {
     public partial class VerArticulo : Form
     {
+        SqlConnection cnx = new SqlConnection("Data Source=.;Initial Catalog=Facturacion;Integrated Security=True");
         Conexion con = new Conexion();
         public VerArticulo()
         {
@@ -98,6 +100,26 @@ namespace ProyectoFacturacion
             Form formi05 = new Articulos();
             this.Hide();
             formi05.Show();
+        }
+
+        private void TxtCod_KeyUp(object sender, KeyEventArgs e)
+        {
+            cnx.Open();
+            SqlCommand cmd = cnx.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT * FROM Articulos where Cod1 like('%" + TxtCod.Text + "%')";
+            cmd.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            dgvArticulos.DataSource = dt;
+
+            cnx.Close();
+        }
+
+        private void TxtCod_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

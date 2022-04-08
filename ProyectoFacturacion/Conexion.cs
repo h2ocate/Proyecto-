@@ -9,6 +9,8 @@ namespace ProyectoFacturacion
 {
     class Conexion
     {
+        public SqlCommand CreateCommand { get; internal set; }
+
         public void ejecutar(string cmd)
         {
             SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=Facturacion;Integrated Security=True");

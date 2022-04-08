@@ -30,7 +30,6 @@ namespace ProyectoFacturacion
         private void InitializeComponent()
         {
             this.label8 = new System.Windows.Forms.Label();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.TxtId = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnEliminar = new System.Windows.Forms.Button();
@@ -56,22 +55,14 @@ namespace ProyectoFacturacion
             this.label8.TabIndex = 44;
             this.label8.Text = "Tipo de pago:";
             // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(548, 136);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(100, 32);
-            this.btnBuscar.TabIndex = 33;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            // 
             // TxtId
             // 
             this.TxtId.Location = new System.Drawing.Point(642, 65);
             this.TxtId.Name = "TxtId";
             this.TxtId.Size = new System.Drawing.Size(161, 22);
             this.TxtId.TabIndex = 32;
+            this.TxtId.TextChanged += new System.EventHandler(this.TxtId_TextChanged);
+            this.TxtId.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtId_KeyUp);
             // 
             // label6
             // 
@@ -86,7 +77,7 @@ namespace ProyectoFacturacion
             // btnEliminar
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(548, 205);
+            this.btnEliminar.Location = new System.Drawing.Point(564, 120);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(100, 32);
             this.btnEliminar.TabIndex = 30;
@@ -107,7 +98,7 @@ namespace ProyectoFacturacion
             // btnActualizar
             // 
             this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizar.Location = new System.Drawing.Point(681, 136);
+            this.btnActualizar.Location = new System.Drawing.Point(708, 122);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(122, 32);
             this.btnActualizar.TabIndex = 28;
@@ -171,7 +162,7 @@ namespace ProyectoFacturacion
             // BtnRegre
             // 
             this.BtnRegre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnRegre.Location = new System.Drawing.Point(681, 205);
+            this.BtnRegre.Location = new System.Drawing.Point(870, 223);
             this.BtnRegre.Name = "BtnRegre";
             this.BtnRegre.Size = new System.Drawing.Size(122, 32);
             this.BtnRegre.TabIndex = 48;
@@ -191,7 +182,6 @@ namespace ProyectoFacturacion
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxtMonto1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.TxtId);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnEliminar);
@@ -209,7 +199,6 @@ namespace ProyectoFacturacion
 
         #endregion
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox TxtId;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnEliminar;

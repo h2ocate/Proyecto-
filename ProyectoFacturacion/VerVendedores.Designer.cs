@@ -40,7 +40,6 @@ namespace ProyectoFacturacion
             this.label1 = new System.Windows.Forms.Label();
             this.TxtApellido = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.TxtCod = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnEliminar = new System.Windows.Forms.Button();
@@ -149,22 +148,14 @@ namespace ProyectoFacturacion
             this.label3.TabIndex = 34;
             this.label3.Text = "Apellido:";
             // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(270, 45);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(100, 32);
-            this.btnBuscar.TabIndex = 33;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            // 
             // TxtCod
             // 
             this.TxtCod.Location = new System.Drawing.Point(91, 47);
             this.TxtCod.Name = "TxtCod";
             this.TxtCod.Size = new System.Drawing.Size(161, 22);
             this.TxtCod.TabIndex = 32;
+            this.TxtCod.TextChanged += new System.EventHandler(this.TxtCod_TextChanged);
+            this.TxtCod.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtCod_KeyUp);
             // 
             // label6
             // 
@@ -276,7 +267,6 @@ namespace ProyectoFacturacion
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxtApellido);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.TxtCod);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnEliminar);
@@ -305,7 +295,6 @@ namespace ProyectoFacturacion
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox TxtApellido;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox TxtCod;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnEliminar;

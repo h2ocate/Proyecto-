@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ namespace ProyectoFacturacion
 {
     public partial class VerPago : Form
     {
+        SqlConnection cnx = new SqlConnection("Data Source=.;Initial Catalog=Facturacion;Integrated Security=True");
         Conexion con = new Conexion();
         public VerPago()
         {
@@ -89,6 +91,30 @@ namespace ProyectoFacturacion
             Form formi07 = new Pago();
             this.Hide();
             formi07.Show();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void TxtId_KeyUp(object sender, KeyEventArgs e)
+        {
+            cnx.Open();
+            SqlCommand cmd = cnx.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT * FROM Pago where IDPago like('%" + TxtId.Text + "%')";
+            cmd.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            dgvPago.DataSource = dt;
+
+            cnx.Close();
+        }
+
+        private void TxtId_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
