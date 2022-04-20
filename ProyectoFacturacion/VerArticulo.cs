@@ -121,5 +121,25 @@ namespace ProyectoFacturacion
         {
 
         }
+
+        private void TxtNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtMarca_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtCant_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtPrecio_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

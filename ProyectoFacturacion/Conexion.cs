@@ -13,7 +13,7 @@ namespace ProyectoFacturacion
 
         public void ejecutar(string cmd)
         {
-            SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=Facturacion;Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=Facturacion2;Integrated Security=True");
             con.Open();
             SqlCommand comando = new SqlCommand(cmd, con);
             comando.ExecuteNonQuery();
@@ -21,7 +21,7 @@ namespace ProyectoFacturacion
         }
         public DataSet Ejecutar_Ds(string cmd)
         {
-            SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=Facturacion;Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=Facturacion2;Integrated Security=True");
             con.Open();
             DataSet DS = new DataSet();
             SqlDataAdapter DA = new SqlDataAdapter(cmd, con);

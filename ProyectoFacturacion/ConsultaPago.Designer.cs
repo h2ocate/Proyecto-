@@ -38,12 +38,11 @@ namespace ProyectoFacturacion
             // btnRegresar4
             // 
             this.btnRegresar4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(97)))), ((int)(((byte)(238)))));
-            this.btnRegresar4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegresar4.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnRegresar4.Location = new System.Drawing.Point(331, 430);
-            this.btnRegresar4.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRegresar4.Location = new System.Drawing.Point(248, 349);
             this.btnRegresar4.Name = "btnRegresar4";
-            this.btnRegresar4.Size = new System.Drawing.Size(165, 39);
+            this.btnRegresar4.Size = new System.Drawing.Size(120, 32);
             this.btnRegresar4.TabIndex = 62;
             this.btnRegresar4.Text = "Regresar";
             this.btnRegresar4.UseVisualStyleBackColor = false;
@@ -53,32 +52,35 @@ namespace ProyectoFacturacion
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
-            this.label1.Location = new System.Drawing.Point(116, 34);
+            this.label1.Location = new System.Drawing.Point(87, 28);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(604, 39);
+            this.label1.Size = new System.Drawing.Size(492, 32);
             this.label1.TabIndex = 61;
             this.label1.Text = "Consulta Consulta de Pago x Cliente";
             // 
             // dgvArticulos
             // 
-            this.dgvArticulos.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvArticulos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(94)))), ((int)(((byte)(129)))));
             this.dgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvArticulos.Location = new System.Drawing.Point(37, 127);
+            this.dgvArticulos.Location = new System.Drawing.Point(28, 103);
+            this.dgvArticulos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvArticulos.Name = "dgvArticulos";
             this.dgvArticulos.RowHeadersWidth = 51;
             this.dgvArticulos.RowTemplate.Height = 24;
-            this.dgvArticulos.Size = new System.Drawing.Size(781, 277);
+            this.dgvArticulos.Size = new System.Drawing.Size(586, 225);
             this.dgvArticulos.TabIndex = 60;
             // 
             // ConsultaPago
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DodgerBlue;
-            this.ClientSize = new System.Drawing.Size(855, 501);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(59)))), ((int)(((byte)(104)))));
+            this.ClientSize = new System.Drawing.Size(641, 407);
             this.Controls.Add(this.btnRegresar4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvArticulos);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ConsultaPago";
             this.Text = "ConsultaPago";
             this.Load += new System.EventHandler(this.ConsultaPago_Load);

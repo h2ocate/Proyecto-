@@ -37,13 +37,14 @@ namespace ProyectoFacturacion
             // 
             // dgvReporte
             // 
-            this.dgvReporte.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvReporte.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(94)))), ((int)(((byte)(129)))));
             this.dgvReporte.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvReporte.Location = new System.Drawing.Point(124, 154);
+            this.dgvReporte.Location = new System.Drawing.Point(93, 125);
+            this.dgvReporte.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvReporte.Name = "dgvReporte";
             this.dgvReporte.RowHeadersWidth = 51;
             this.dgvReporte.RowTemplate.Height = 24;
-            this.dgvReporte.Size = new System.Drawing.Size(683, 277);
+            this.dgvReporte.Size = new System.Drawing.Size(512, 225);
             this.dgvReporte.TabIndex = 51;
             this.dgvReporte.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvReporte_CellContentClick);
             // 
@@ -52,21 +53,21 @@ namespace ProyectoFacturacion
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
-            this.label1.Location = new System.Drawing.Point(48, 26);
+            this.label1.Location = new System.Drawing.Point(36, 21);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(754, 39);
+            this.label1.Size = new System.Drawing.Size(616, 32);
             this.label1.TabIndex = 52;
             this.label1.Text = "Reporte de Facturación x Cliente entre fechas";
             // 
             // btnRegresar4
             // 
             this.btnRegresar4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(97)))), ((int)(((byte)(238)))));
-            this.btnRegresar4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegresar4.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnRegresar4.Location = new System.Drawing.Point(386, 506);
-            this.btnRegresar4.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRegresar4.Location = new System.Drawing.Point(290, 411);
             this.btnRegresar4.Name = "btnRegresar4";
-            this.btnRegresar4.Size = new System.Drawing.Size(165, 39);
+            this.btnRegresar4.Size = new System.Drawing.Size(120, 32);
             this.btnRegresar4.TabIndex = 53;
             this.btnRegresar4.Text = "Regresar";
             this.btnRegresar4.UseVisualStyleBackColor = false;
@@ -74,13 +75,14 @@ namespace ProyectoFacturacion
             // 
             // Reporte
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.RoyalBlue;
-            this.ClientSize = new System.Drawing.Size(935, 578);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(59)))), ((int)(((byte)(104)))));
+            this.ClientSize = new System.Drawing.Size(701, 470);
             this.Controls.Add(this.btnRegresar4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvReporte);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Reporte";
             this.Text = "Reporte";
             this.Load += new System.EventHandler(this.Reporte_Load);
