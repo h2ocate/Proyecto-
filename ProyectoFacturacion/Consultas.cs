@@ -51,5 +51,10 @@ namespace ProyectoFacturacion
             this.Hide();
             formi15.Show();
         }
+
+        private void Consultas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

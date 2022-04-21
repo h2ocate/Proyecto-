@@ -43,10 +43,10 @@ namespace ProyectoFacturacion
             this.btnVendedores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(97)))), ((int)(((byte)(238)))));
             this.btnVendedores.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVendedores.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnVendedores.Location = new System.Drawing.Point(676, 132);
-            this.btnVendedores.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnVendedores.Location = new System.Drawing.Point(507, 107);
+            this.btnVendedores.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVendedores.Name = "btnVendedores";
-            this.btnVendedores.Size = new System.Drawing.Size(168, 57);
+            this.btnVendedores.Size = new System.Drawing.Size(126, 46);
             this.btnVendedores.TabIndex = 18;
             this.btnVendedores.Text = "Pago x Cliente";
             this.btnVendedores.UseVisualStyleBackColor = false;
@@ -57,11 +57,11 @@ namespace ProyectoFacturacion
             this.btnPago.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(97)))), ((int)(((byte)(238)))));
             this.btnPago.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPago.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnPago.Location = new System.Drawing.Point(456, 132);
-            this.btnPago.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPago.Location = new System.Drawing.Point(342, 107);
+            this.btnPago.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPago.Name = "btnPago";
             this.btnPago.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnPago.Size = new System.Drawing.Size(188, 57);
+            this.btnPago.Size = new System.Drawing.Size(141, 46);
             this.btnPago.TabIndex = 17;
             this.btnPago.Text = "Articulos X Factura";
             this.btnPago.UseCompatibleTextRendering = true;
@@ -73,10 +73,10 @@ namespace ProyectoFacturacion
             this.BtnClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(97)))), ((int)(((byte)(238)))));
             this.BtnClientes.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnClientes.ForeColor = System.Drawing.SystemColors.Window;
-            this.BtnClientes.Location = new System.Drawing.Point(234, 132);
-            this.BtnClientes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnClientes.Location = new System.Drawing.Point(176, 107);
+            this.BtnClientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnClientes.Name = "BtnClientes";
-            this.BtnClientes.Size = new System.Drawing.Size(180, 57);
+            this.BtnClientes.Size = new System.Drawing.Size(135, 46);
             this.BtnClientes.TabIndex = 16;
             this.BtnClientes.Text = "Vendedores ";
             this.BtnClientes.UseVisualStyleBackColor = false;
@@ -87,10 +87,10 @@ namespace ProyectoFacturacion
             this.BtnArticulos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(97)))), ((int)(((byte)(238)))));
             this.BtnArticulos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnArticulos.ForeColor = System.Drawing.SystemColors.Window;
-            this.BtnArticulos.Location = new System.Drawing.Point(23, 132);
-            this.BtnArticulos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnArticulos.Location = new System.Drawing.Point(17, 107);
+            this.BtnArticulos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnArticulos.Name = "BtnArticulos";
-            this.BtnArticulos.Size = new System.Drawing.Size(188, 57);
+            this.BtnArticulos.Size = new System.Drawing.Size(141, 46);
             this.BtnArticulos.TabIndex = 15;
             this.BtnArticulos.Text = "Reporte Fecha ";
             this.BtnArticulos.UseCompatibleTextRendering = true;
@@ -102,9 +102,10 @@ namespace ProyectoFacturacion
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
-            this.label1.Location = new System.Drawing.Point(220, 31);
+            this.label1.Location = new System.Drawing.Point(165, 25);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(424, 47);
+            this.label1.Size = new System.Drawing.Size(338, 38);
             this.label1.TabIndex = 14;
             this.label1.Text = "Reportes y Consultas";
             // 
@@ -113,11 +114,11 @@ namespace ProyectoFacturacion
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(97)))), ((int)(((byte)(238)))));
             this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Window;
-            this.button1.Location = new System.Drawing.Point(196, 435);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(147, 353);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button1.Size = new System.Drawing.Size(155, 57);
+            this.button1.Size = new System.Drawing.Size(116, 46);
             this.button1.TabIndex = 19;
             this.button1.Text = "Regresar";
             this.button1.UseCompatibleTextRendering = true;
@@ -129,11 +130,11 @@ namespace ProyectoFacturacion
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(97)))), ((int)(((byte)(238)))));
             this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.Window;
-            this.button2.Location = new System.Drawing.Point(472, 435);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(354, 353);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
             this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button2.Size = new System.Drawing.Size(155, 57);
+            this.button2.Size = new System.Drawing.Size(116, 46);
             this.button2.TabIndex = 20;
             this.button2.Text = "Cerrar";
             this.button2.UseCompatibleTextRendering = true;
@@ -141,10 +142,10 @@ namespace ProyectoFacturacion
             // 
             // Consultas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ClientSize = new System.Drawing.Size(882, 568);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(59)))), ((int)(((byte)(104)))));
+            this.ClientSize = new System.Drawing.Size(662, 462);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnVendedores);
@@ -152,8 +153,10 @@ namespace ProyectoFacturacion
             this.Controls.Add(this.BtnClientes);
             this.Controls.Add(this.BtnArticulos);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Consultas";
             this.Text = "Consultas";
+            this.Load += new System.EventHandler(this.Consultas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

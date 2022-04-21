@@ -28,5 +28,10 @@ namespace ProyectoFacturacion
         {
             dgvArticulos.DataSource = LlenarDataGV("Pago").Tables[0];
         }
+
+        private void dgvArticulos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
