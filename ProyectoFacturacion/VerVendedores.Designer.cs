@@ -29,6 +29,9 @@ namespace ProyectoFacturacion
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TxtNombre = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.TxtTel = new System.Windows.Forms.TextBox();
@@ -59,7 +62,7 @@ namespace ProyectoFacturacion
             this.TxtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtNombre.ForeColor = System.Drawing.SystemColors.Window;
             this.TxtNombre.Location = new System.Drawing.Point(85, 196);
-            this.TxtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.TxtNombre.Name = "TxtNombre";
             this.TxtNombre.Size = new System.Drawing.Size(122, 20);
             this.TxtNombre.TabIndex = 45;
@@ -82,7 +85,7 @@ namespace ProyectoFacturacion
             this.TxtTel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtTel.ForeColor = System.Drawing.SystemColors.Window;
             this.TxtTel.Location = new System.Drawing.Point(85, 336);
-            this.TxtTel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtTel.Margin = new System.Windows.Forms.Padding(2);
             this.TxtTel.Name = "TxtTel";
             this.TxtTel.Size = new System.Drawing.Size(122, 20);
             this.TxtTel.TabIndex = 43;
@@ -105,7 +108,7 @@ namespace ProyectoFacturacion
             this.TxtSueldo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtSueldo.ForeColor = System.Drawing.SystemColors.Window;
             this.TxtSueldo.Location = new System.Drawing.Point(85, 418);
-            this.TxtSueldo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtSueldo.Margin = new System.Windows.Forms.Padding(2);
             this.TxtSueldo.Name = "TxtSueldo";
             this.TxtSueldo.Size = new System.Drawing.Size(122, 20);
             this.TxtSueldo.TabIndex = 41;
@@ -140,7 +143,7 @@ namespace ProyectoFacturacion
             this.TxtGenero.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtGenero.ForeColor = System.Drawing.SystemColors.Window;
             this.TxtGenero.Location = new System.Drawing.Point(85, 290);
-            this.TxtGenero.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtGenero.Margin = new System.Windows.Forms.Padding(2);
             this.TxtGenero.Name = "TxtGenero";
             this.TxtGenero.Size = new System.Drawing.Size(122, 20);
             this.TxtGenero.TabIndex = 37;
@@ -163,7 +166,7 @@ namespace ProyectoFacturacion
             this.TxtApellido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtApellido.ForeColor = System.Drawing.SystemColors.Window;
             this.TxtApellido.Location = new System.Drawing.Point(85, 239);
-            this.TxtApellido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtApellido.Margin = new System.Windows.Forms.Padding(2);
             this.TxtApellido.Name = "TxtApellido";
             this.TxtApellido.Size = new System.Drawing.Size(122, 20);
             this.TxtApellido.TabIndex = 35;
@@ -186,7 +189,7 @@ namespace ProyectoFacturacion
             this.TxtCod.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtCod.ForeColor = System.Drawing.SystemColors.Window;
             this.TxtCod.Location = new System.Drawing.Point(68, 38);
-            this.TxtCod.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtCod.Margin = new System.Windows.Forms.Padding(2);
             this.TxtCod.Name = "TxtCod";
             this.TxtCod.Size = new System.Drawing.Size(122, 20);
             this.TxtCod.TabIndex = 32;
@@ -211,7 +214,7 @@ namespace ProyectoFacturacion
             this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnEliminar.Location = new System.Drawing.Point(132, 92);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(118, 31);
             this.btnEliminar.TabIndex = 30;
@@ -237,7 +240,7 @@ namespace ProyectoFacturacion
             this.btnActualizar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnActualizar.Location = new System.Drawing.Point(10, 92);
-            this.btnActualizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(2);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(118, 31);
             this.btnActualizar.TabIndex = 28;
@@ -247,10 +250,42 @@ namespace ProyectoFacturacion
             // 
             // dgvVendedores
             // 
+            this.dgvVendedores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvVendedores.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvVendedores.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(94)))), ((int)(((byte)(129)))));
+            this.dgvVendedores.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvVendedores.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvVendedores.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvVendedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(94)))), ((int)(((byte)(129)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvVendedores.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvVendedores.EnableHeadersVisualStyles = false;
+            this.dgvVendedores.GridColor = System.Drawing.Color.SteelBlue;
             this.dgvVendedores.Location = new System.Drawing.Point(224, 128);
-            this.dgvVendedores.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvVendedores.Margin = new System.Windows.Forms.Padding(2);
             this.dgvVendedores.Name = "dgvVendedores";
+            this.dgvVendedores.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(94)))), ((int)(((byte)(129)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvVendedores.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvVendedores.RowHeadersWidth = 51;
             this.dgvVendedores.RowTemplate.Height = 24;
             this.dgvVendedores.Size = new System.Drawing.Size(615, 355);
@@ -263,7 +298,7 @@ namespace ProyectoFacturacion
             this.TxtComision.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtComision.ForeColor = System.Drawing.SystemColors.Window;
             this.TxtComision.Location = new System.Drawing.Point(85, 457);
-            this.TxtComision.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtComision.Margin = new System.Windows.Forms.Padding(2);
             this.TxtComision.Name = "TxtComision";
             this.TxtComision.Size = new System.Drawing.Size(122, 20);
             this.TxtComision.TabIndex = 47;
@@ -284,7 +319,7 @@ namespace ProyectoFacturacion
             // 
             this.cbxEstado.FormattingEnabled = true;
             this.cbxEstado.Location = new System.Drawing.Point(85, 378);
-            this.cbxEstado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbxEstado.Margin = new System.Windows.Forms.Padding(2);
             this.cbxEstado.Name = "cbxEstado";
             this.cbxEstado.Size = new System.Drawing.Size(122, 21);
             this.cbxEstado.TabIndex = 48;
@@ -296,7 +331,7 @@ namespace ProyectoFacturacion
             this.BtnRegre.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRegre.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnRegre.Location = new System.Drawing.Point(717, 11);
-            this.BtnRegre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnRegre.Margin = new System.Windows.Forms.Padding(2);
             this.BtnRegre.Name = "BtnRegre";
             this.BtnRegre.Size = new System.Drawing.Size(120, 32);
             this.BtnRegre.TabIndex = 49;
@@ -331,7 +366,7 @@ namespace ProyectoFacturacion
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.dgvVendedores);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "VerVendedores";
             this.Text = "VerVendedores";
             this.Load += new System.EventHandler(this.VerVendedores_Load);
