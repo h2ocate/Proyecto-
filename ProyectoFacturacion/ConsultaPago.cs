@@ -29,6 +29,13 @@ namespace ProyectoFacturacion
             dgvArticulos.DataSource = LlenarDataGV("Pago").Tables[0];
         }
 
+
+        private void btnRegresar4_Click(object sender, EventArgs e)
+        {
+            Form furmu = new Consultas();
+            this.Hide();
+            furmu.Show();
+        }
         private void dgvArticulos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
