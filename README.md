@@ -19,6 +19,9 @@ Vas a Visual Studio, en la opcion "Clonar Repositorio", pegas el link y automati
 
 
 ### IMAGENES 🔩
+<details>
+  <summary>Ver imagenes</summary>
+  
 ![Image text](https://github.com/h2ocate/Proyecto-/blob/main/imgs/login.png)
 ![Image text](https://github.com/h2ocate/Proyecto-/blob/main/imgs/registro.png)
 ![Image text](https://github.com/h2ocate/Proyecto-/blob/main/imgs/inicio.png)
@@ -26,6 +29,16 @@ Vas a Visual Studio, en la opcion "Clonar Repositorio", pegas el link y automati
 ![Image text](https://github.com/h2ocate/Proyecto-/blob/main/imgs/condiciones%20de%20pago.png)
 ![Image text](https://github.com/h2ocate/Proyecto-/blob/main/imgs/gestion%20de%20empleados.png)
 ![Image text](https://github.com/h2ocate/Proyecto-/blob/main/imgs/registro%20de%20clientes.png)
+![Image text](https://github.com/h2ocate/Proyecto-/blob/main/imgs/vervendedores.png)
+![Image text](https://github.com/h2ocate/Proyecto-/blob/main/imgs/vendedoresxfecha.png)
+![Image text](https://github.com/h2ocate/Proyecto-/blob/main/imgs/verpago.png)
+![Image text](https://github.com/h2ocate/Proyecto-/blob/main/imgs/pagoxcliente.png)
+![Image text](https://github.com/h2ocate/Proyecto-/blob/main/imgs/verfactura.png)
+![Image text](https://github.com/h2ocate/Proyecto-/blob/main/imgs/vercliente.png)
+![Image text](https://github.com/h2ocate/Proyecto-/blob/main/imgs/facturacionxcliente.png)
+![Image text](https://github.com/h2ocate/Proyecto-/blob/main/imgs/articulosxfactura.png)
+  
+</details>
 
 ## Construido con 🛠️
 
@@ -35,5 +48,5 @@ Vas a Visual Studio, en la opcion "Clonar Repositorio", pegas el link y automati
 
 ## Autores ✒️
 
-* **Adan Solis**
-* **Angel Adames**
+* **Adan Jesus Reyes Solis**
+* **Angel Jose Adames Echavarria**
